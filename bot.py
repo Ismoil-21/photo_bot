@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN", "8726851391:AAGBjqLiUyvyrtwzAGtsOc3TBh5mxrla7WA")
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/rasm_bot")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://Ismoil18_db_user:yUsS5lkh2JEgBxUp@cluster0.6lisl9o.mongodb.net/photo_bot")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
