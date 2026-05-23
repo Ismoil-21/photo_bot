@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("BOT_TOKEN", "8726851391:AAGBjqLiUyvyrtwzAGtsOc3TBh5mxrla7WA")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8726851391:AAGBjqLiUyvyrtwzAGtsOc3TBh5mxrla7WA")
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://Ismoil18_db_user:yUsS5lkh2JEgBxUp@cluster0.6lisl9o.mongodb.net/photo_bot")
 
 logging.basicConfig(level=logging.INFO)
@@ -71,7 +71,7 @@ async def db_get_stats(user_id: int):
     }
 
 # ─── Bot & Dispatcher ──────────────────────────────────────────────────────────
-bot = Bot(token=TOKEN)
+bot = Bot(token=BOT_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 router = Router()
