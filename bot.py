@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8726851391:AAGBjqLiUyvyrtwzAGtsOc3TBh5mxrla7WA")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8900420211:AAGnvaCXcpp9u4cuQD5paFh554kxg9lzrLA")
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://Ismoil18_db_user:yUsS5lkh2JEgBxUp@cluster0.6lisl9o.mongodb.net/photo_bot")
 
 logging.basicConfig(level=logging.INFO)
